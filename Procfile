@@ -1,0 +1,1 @@
+worker: python Bingx Trade Bot.py
