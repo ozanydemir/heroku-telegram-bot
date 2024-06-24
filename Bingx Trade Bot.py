@@ -10,8 +10,8 @@ APIURL = "https://open-api.bingx.com"
 APIKEY = "O97o84Mk0is9vFtB61TE9TqITEovwoQC4mEOl60Ixk8PDyo2qgOjhr3LKzYRyNDZhnFvkT56D623cK5XA"
 SECRETKEY = "BbMimCmoDMz9zCzV8IAQhn0OG6ptFtEixEqoLSqQV5oQiklJ6M34Z0xql3ndP0T4Xgx82xewh8B2McAtw"
 
-TELEGRAM_BOT_TOKEN = "7052097278:AAE0WQbMNlPegk8QqUPGm8D1TdAH7rRfCM4"
-CHAT_ID = "6060798795"
+TELEGRAM_BOT_TOKEN = "-"
+CHAT_ID = "-"
 
 # Değişkenler
 alert_prices = {}
@@ -107,10 +107,10 @@ async def set_alert(update: Update, context: CallbackContext) -> None:
      
      # Kullanıcıya alarmın ayarlandığını bildiren bir mesaj gönderilir
     if priceLevel == "+":
-        await update.message.reply_text(f'Alarm ayarlandı: {coin} - {price} üzerine çıkarsa haber verilecek para babası!')
+        await update.message.reply_text(f'Alarm ayarlandı: {coin} - {price} üzerine çıkarsa haber verilecek!')
 
     elif priceLevel == "-":
-        await update.message.reply_text(f'Alarm ayarlandı: {coin} - {price} altına düşerse haber verilecek para babası!')
+        await update.message.reply_text(f'Alarm ayarlandı: {coin} - {price} altına düşerse haber verilecek!')
 
 
 async def stop_alert(update: Update, context: CallbackContext) -> None:
